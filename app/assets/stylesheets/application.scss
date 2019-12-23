@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* ****** */
+/* GLOBAL */
+/* ****** */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* *************** */
+/* UTILITY CLASSES */
+/* *************** */
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-vert {
+	flex-direction: column;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.half-width {
+	width: 50%;
+}
+
+/* ****** */
+/* NAVBAR */
+/* ****** */
+
+.navbar_container {
+	width: 100%;
+	display: flex;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+.navbar_container a {
+	text-decoration: none;
+	margin: 10px 20px;
+	color: #f7f7f7;
+	letter-spacing: 2px;
+}
+
+/* ****** */
+/* HEADER */
+/* ****** */
+
+.header_container {
+	min-height: 350px;
+	padding: 0px 50px;
+	background-color: #39a2ae;
+}
+
+.header_content {
+	flex-direction: row;
+}
+
+.header_content button {
+	width: 150px;
+	height: 40px;
+	background-color: #e8d8d2;
+	border: solid 1px #71c4c2;
+	border-radius: 8px;
+	color: #39a2ae;
+}
+
+.header_content p,
+.header_content h1 {
+	color: #f7f7f7;
+}
+
+p {
+	padding: 3px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.15rem;
+}
