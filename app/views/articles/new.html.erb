@@ -1,32 +1,47 @@
 <div class="navbar_container">
+
   <%= link_to  "HOME", root_path %>
   <%= link_to  "ABOUT", about_path %>
+
 </div>
 
 <div class="header_container flex-center">
+
   <div class="header_content flex-center">
     <div class=" flex-vert flex-center">
       <h1>Create An Article</h1>
     </div>
   </div>
-</div>
-<div class="flex-center flex-vert new-article_container form_container half-width">
 
+</div>
+
+<div class="new-article_container form_container flex-center flex-vert half-width">
   <%= form_for @article do |f| %>
+
+    <% if @article.errors.any? %>
+      <p class="flex-center form_element">
+        <ul>
+          <% @article.errors.full_messages.each do |msg| %>
+            <li> <%=msg%> </li>
+          <% end %>
+        </ul>
+      </p>
+    <% end %>
+
     <p class="flex-center form_element">
       <%= f.label :title, "Blog Title" %>
       <%= f.text_field :title %>
     </p>
+
     <p class="flex-center form_element">
       <%= f.label :desription, "Description" %>
       <%= f.text_area :desription %>
     </p>
+
     <p >
       <%= f.submit "Submit", disable_with: 'Submiting...' %>
     </p>
 
-
   <% end %>
-
 </div>
   

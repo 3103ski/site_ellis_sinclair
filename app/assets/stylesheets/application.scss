@@ -29,7 +29,8 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
-button:hover {
+button:hover,
+.new-article_container input[type='submit']:hover {
 	cursor: pointer;
 }
 
@@ -80,7 +81,7 @@ button:hover {
 /* ****** */
 
 .header_container {
-	min-height: 350px;
+	min-height: 250px;
 	padding: 0px 50px;
 	background-color: #39a2ae;
 }

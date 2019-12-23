@@ -1,0 +1,14 @@
+<div class="navbar_container">
+  <%= link_to  "HOME", root_path %>
+  <%= link_to  "ABOUT", about_path %>
+</div>
+
+<div class="header_container flex-center">
+  <div class="header_content flex-center">
+    <div class=" flex-vert flex-center">
+      <h1><%= @article.title %></h1>
+    </div>
+  </div>
+</div>
+
+<p>Description: <%= @article.desription %></p>
