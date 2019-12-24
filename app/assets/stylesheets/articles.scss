@@ -40,3 +40,42 @@ label {
 	width: 80%;
 	padding: 2px 10%;
 }
+
+.container_list {
+	overflow: scroll;
+	height: 70vh;
+	padding: 15px;
+}
+
+.blogs_blog {
+	width: 60%;
+	margin: 5px auto;
+	padding: 5px;
+	min-height: 100px;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.233);
+}
+
+.blog_container_txt {
+	width: 80%;
+	padding-left: 3%;
+	text-align: left;
+}
+
+.blog_container_txt p,
+.blog_container_txt h3 {
+	margin: 2px 0;
+}
+
+.blog_container_btns {
+	width: 20%;
+}
+
+.blogs_container_create {
+	display: flex;
+	margin: 20px auto;
+	align-items: center;
+	min-height: 50px;
+}

@@ -1,0 +1,19 @@
+/* ****************************************** */
+/*                  NAVBAR                    */
+/* ****************************************** */
+
+.navbar_container {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+}
+
+.navbar_container a {
+	text-decoration: none;
+	margin: 10px 20px;
+	color: #f7f7f7;
+	letter-spacing: 2px;
+}
