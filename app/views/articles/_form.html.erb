@@ -1,0 +1,32 @@
+<div class="new-article_container form_container flex-center flex-vert half-width">
+  <%= form_for @article do |f| %>
+
+    <% if @article.errors.any? %>
+      <p class="flex-center form_element">
+        <ul>
+          <% @article.errors.full_messages.each do |msg| %>
+            <li> <%=msg%> </li>
+          <% end %>
+        </ul>
+      </p>
+    <% end %>
+
+    <p class="flex-center form_element">
+      <%= f.label :title, "Blog Title" %>
+      <%= f.text_field :title %>
+    </p>
+
+    <p class="flex-center form_element">
+      <%= f.label :desription, "Description" %>
+      <%= f.text_area :desription %>
+    </p>
+
+    <p >
+      <%= f.submit "Submit", disable_with: 'Submiting...' %>
+    </p>
+    <p class="style_link">
+      <%= link_to "Back To Blogs",  articles_path %>
+    </p>
+
+  <% end %>
+</div>
