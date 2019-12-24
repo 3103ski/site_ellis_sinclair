@@ -1,0 +1,37 @@
+<div class="header_container flex-center bg3">
+  <div class="navbar_container">
+    <%= link_to  "HOME", root_path %>
+    <%= link_to  "ABOUT", about_path %>
+    <%= link_to  "BLOGS", articles_path %>
+  </div>
+
+  <div class="header_content flex-center">
+    <div class=" flex-vert flex-center">
+      <h1 class="c1">Check Out Some Blogs</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container_list flex flex-vert ">
+  
+    <% @articles.each do |article| %>
+      <div class="blogs_blog bg1 border">
+        <div class="blog_container_txt flex-vert">
+          <h3 class="c3">
+            <%= article.title%> 
+          </h3>
+          <p class="c3">
+            <%= article.desription%> 
+          </p>
+        </div>
+        <div class="blog_container_btns flex-center style_link">
+          <%= link_to 'Show', article_path(article) %> 
+          <%= link_to 'Edit', edit_article_path(article) %> 
+        </div>
+      </div>
+    <%end%>
+
+    <p class="style_link blogs_container_create">
+      <%= link_to "Create new article", new_article_path %>
+    </p>
+</div>
