@@ -1,19 +1,51 @@
 /* ****************************************** */
-/*                  NAVBAR                    */
+/*        	    HEADER + NAVBAR               */
 /* ****************************************** */
+
+// Header Container
+
+.header_container {
+	min-height: 150px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+// Header Content
+
+.header_content {
+	width: 100%;
+	height: 110px;
+}
+
+.header_content h1 {
+	letter-spacing: 5px;
+}
+
+// Navbar
 
 .navbar_container {
 	display: flex;
-	height: 60px;
 	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 0;
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin-top: auto;
+}
+
+.navbar_container ul {
+	padding: 0;
+	width: 60%;
+	margin: 0 auto;
+}
+.navbar_container li {
+	list-style: none;
+	margin: 0px auto;
 }
 
 .navbar_container a {
 	text-decoration: none;
-	margin: 10px 20px;
-	color: #f7f7f7;
-	letter-spacing: 2px;
+	color: rgba(0, 0, 0, 0.767);
+	letter-spacing: 4px;
+	font-size: 1.1rem;
+	font-weight: 200;
 }

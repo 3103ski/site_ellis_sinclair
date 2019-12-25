@@ -1,3 +1,40 @@
-.greetings_container {
-	padding-top: 20px;
+// section 1___Current Headline Book
+
+.section_one_container {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 0px;
 }
+
+.home_book_container {
+	width: 65%;
+	margin: 20px auto;
+	position: relative;
+}
+
+.home_book_book {
+	position: relative;
+	width: 40%;
+}
+
+.home_book_book img {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.45);
+}
+
+.home_book_desc {
+	width: 50%;
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.home_book_desc h2 {
+	margin: 0;
+	margin-right: auto;
+	border-bottom: solid 2px rgba(0, 0, 0, 0.17);
+}
+
+// lates blog

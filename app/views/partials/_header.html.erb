@@ -1,20 +1,24 @@
-<div class="header_container flex-center bg3">
-
-  <div class="navbar_container">
-    <%= link_to  "HOME", root_path %>
-    <%= link_to  "ABOUT", about_path %>
-    <%= link_to  "BLOGS", articles_path %>
-  </div>
+<div class="header_container flex-vert flex-center bg2">
 
   <div class="header_content flex-center">
-    <div class=" flex-vert flex-center">
-      <h1 class="c1">
+
+      <h1 class="c3">
         <%= banner %> 
           <% if local_assigns.has_key? :showName %>
             <%= @article.title %>
           <% end %>
       </h1>
-    </div>
+
+  </div>
+
+  <div class="navbar_container">
+    <ul class="flex">
+      <li><%= link_to  "home", root_path %></li>
+      <li><%= link_to  "books", about_path %></li>
+      <li><%= link_to  "short stories", about_path %></li>
+      <li><%= link_to  "blog", articles_path %></li>
+      <li><%= link_to  "about", about_path %></li>
+    </ul>
   </div>
 
 </div>
