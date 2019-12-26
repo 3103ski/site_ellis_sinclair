@@ -1,5 +1,10 @@
 // section 1___Current Headline Book
 
+.section {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 0px;
+}
 .section_one_container {
 	width: 100%;
 	box-sizing: border-box;
@@ -19,7 +24,7 @@
 
 .home_book_book img {
 	position: relative;
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
 	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.45);
 }
@@ -37,4 +42,26 @@
 	border-bottom: solid 2px rgba(0, 0, 0, 0.17);
 }
 
-// lates blog
+// recent blogs
+
+.s2 h1 {
+	border-bottom: solid 2px rgba(0, 0, 0, 0.17);
+	margin: 5px auto;
+	width: 30%;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.s2 h3 {
+	line-height: 2rem;
+	text-align: center;
+}
+
+.home_blog_container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.s2 {
+	min-height: 400px;
+}
