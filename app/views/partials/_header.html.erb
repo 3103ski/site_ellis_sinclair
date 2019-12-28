@@ -1,16 +1,13 @@
-<div class="header_container flex-vert flex-center bg2">
 
-  <div class="header_content flex-center">
-
+<div class="header_container flex-center  bg2">
       <h1 class="c3">
         <%= banner %> 
           <% if local_assigns.has_key? :showName %>
             <%= @article.title %>
           <% end %>
       </h1>
-
-  </div>
-
+</div>
+<nav class="navbar sticky-top navbar bg2">
   <div class="navbar_container">
     <ul class="flex">
       <li><%= link_to  "home", root_path %></li>
@@ -19,6 +16,6 @@
       <li><%= link_to  "blog", articles_path %></li>
       <li><%= link_to  "about", about_path %></li>
     </ul>
-  </div>
+  </div> 
+</nav>
 
-</div>

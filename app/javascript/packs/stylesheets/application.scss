@@ -10,8 +10,8 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+//  *= require_tree .
+//  *= require_self
  */
 
 /* ****************************************** */
@@ -19,6 +19,11 @@
 /* ****************************************** */
 
 // IMPORTS
+@import '~bootstrap/scss/bootstrap'; // never forget the semicolon
+@import './articles.scss';
+@import './pageAbout';
+@import './pageHome';
+@import './partials.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400&display=swap');
 
@@ -30,13 +35,17 @@ body {
 // BUTTONS
 
 button:hover,
-.new-article_container input[type='submit']:hover {
+.btn:hover,
+.new-article_container input[type='submit']:hover,
+.btn-primary:hover {
 	cursor: pointer;
 }
 
 .style_link a,
 .new-article_container input[type='submit'],
-button {
+button,
+.btn,
+.btn-primary {
 	text-decoration: none;
 	margin: 2px 3px;
 	font-size: 0.95rem;
@@ -156,7 +165,9 @@ p {
 
 .style_link a,
 .new-article_container input[type='submit'],
-button {
+button,
+.btn,
+.btn-primary {
 	color: rgba(0, 0, 0, 0.5);
 	background-color: #c5e3ec;
 }
