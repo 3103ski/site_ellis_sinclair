@@ -4,8 +4,6 @@
 // that code so it'll be compiled.
 
 require('@rails/ujs').start();
-//= require jquery
-//= require bootstrap-sprockets
 require('turbolinks').start();
 require('@rails/activestorage').start();
 require('channels');
@@ -14,11 +12,13 @@ require('channels');
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
 //
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
+// const images = require.context('../images/', true);
+// const imagePath = name => images(name, true);
 
 import 'bootstrap';
-import './stylesheets/application';
+require('bootstrap/scss/bootstrap');
+
+// import './stylesheets/_custom.scss';
 
 document.addEventListener('turbolinks:load', () => {
 	$('[data-toggle="tooltip"]').tooltip();

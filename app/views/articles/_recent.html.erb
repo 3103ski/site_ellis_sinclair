@@ -1,0 +1,20 @@
+
+<div>
+  <% @articles.each do |article| %>
+    <div class="blogs_blog bg1 border">
+      <div class="blog_container_txt flex-vert">
+        <h3 class="c3">
+          <%= article.title%> 
+        </h3>
+        <p class="c3">
+          <%= article.desription%> 
+        </p>
+      </div>
+      <div class="blog_container_btns flex-center style_link">
+        <%= link_to 'Show', article_path(article) %> 
+        <%= link_to 'Edit', edit_article_path(article) %> 
+        <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %> 
+      </div>
+    </div>
+  <%end%>
+</div>

@@ -19,12 +19,11 @@
 /* ****************************************** */
 
 // IMPORTS
-@import '~bootstrap/scss/bootstrap'; // never forget the semicolon
+// @import '../../javascript/stylesheets/custom';
 @import './articles.scss';
 @import './pageAbout';
 @import './pageHome';
 @import './partials.scss';
-
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400&display=swap');
 
 body {
