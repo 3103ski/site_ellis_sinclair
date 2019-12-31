@@ -1,0 +1,221 @@
+/* ******************** */
+/* **** COMMONS    **** */
+/* ******************** */
+
+// *** SIZING *** //
+
+// *******
+// widths
+// ---
+
+.card_container {
+	width: 100%;
+}
+
+// *******
+// heights
+// ---
+
+.card_top {
+	height: 275px;
+}
+
+.card_bottom {
+	height: 50px;
+}
+
+.card_top_btns,
+.card_top_btns button {
+	height: 45px;
+}
+
+.card_top_btns:hover,
+.card_top_btns:hover {
+	height: 53px;
+}
+
+// *******
+// un-hovered positioning
+// ---
+
+.card_top_desc {
+	bottom: -275px;
+}
+
+.card_top_btns {
+	bottom: -45px;
+}
+
+/* ****************************** */
+/* ****  COLORS + SHADOWS    **** */
+/* ****************************** */
+
+// BACKGROUND COLORS
+
+.card_top_btns {
+	background-color: #f1f1f1;
+}
+
+// makes btn transparent to use div bg (left this way for 2 btn version)
+.card_top_btns button {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.card_top_desc {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+#top:hover .card_top_desc {
+	// background-color: rgba(255, 255, 255, 0.7);
+	background-color: #f1f1f1b7;
+}
+
+.card_top_btns:hover {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+// button text
+.card_top_btns button {
+	color: #355c7d;
+}
+// card bottom text
+.card_bottom p {
+	color: #353839;
+}
+
+.card_top_desc {
+	color: #353839;
+}
+
+// SHADOWS
+.card_container {
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.255);
+}
+
+.card_container:hover {
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ******************** */
+/* ****    CARD    **** */
+/* ******************** */
+
+.card_container {
+	border-radius: 8px;
+	margin: 10px;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.card_container:hover {
+	margin-top: 7px;
+}
+
+/* ******************** */
+/* ****  CARD TOP  **** */
+/* ******************** */
+
+.card_top {
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.card_top_pic {
+	background-image: url('https://images.pexels.com/photos/3303614/pexels-photo-3303614.jpeg?cs=srgb&dl=family-decorating-their-christmas-tree-3303614.jpg&fm=jpg');
+	background-size: cover;
+	background-position: center;
+	top: 0;
+}
+
+/* DESCRIPTION  */
+
+.card_top_desc {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	transition: 0.24s;
+}
+
+/* BUTTONS */
+
+.card_top_btns {
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.card_top_btns button {
+	margin: 0;
+	border: none;
+	box-shadow: none;
+}
+
+/* ******************** */
+/* **** TOP HOVERS **** */
+/* ******************** */
+
+#top:hover .card_top_desc {
+	bottom: 0px;
+}
+
+#top:hover .card_top_btns {
+	bottom: 0;
+}
+
+.card_top_btns:hover {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+/* ******************** */
+/* ***  CARD BOTTOM *** */
+/* ******************** */
+
+.card_bottom {
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.card_bottom p {
+	margin: 0;
+}
+
+.p1 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+/* ******************** */
+/* ****  UTILITY   **** */
+/* ******************** */
+
+.card_top_pic,
+.card_top_btns,
+.card_container,
+.card_top_btns button {
+	transition: 0.2s;
+	transition-timing-function: ease;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.wid_full {
+	width: 100%;
+}
+
+.hei_full {
+	height: 100%;
+}
+
+.ab {
+	position: absolute;
+}
+
+.flex {
+	display: flex;
+}

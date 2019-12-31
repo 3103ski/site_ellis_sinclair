@@ -14,24 +14,30 @@
 //  *= require_self
  */
 
-/* ****************************************** */
-/*                  GLOBAL                    */
-/* ****************************************** */
-
-// IMPORTS
-// @import '../../javascript/stylesheets/custom';
+// page stylesheets
 @import './articles.scss';
 @import './pageAbout';
 @import './pageHome';
-@import './partials.scss';
+@import './partials.scss'; // for all partials
+
+// component stylesheets
+@import './componentCards.scss';
+
+// CDN imports
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400&display=swap');
+
+/* ****************************************** */
+/*              GLOBAL STYLING                */
+/* ****************************************** */
 
 body {
 	margin: 0;
 	padding: 0;
 }
 
-// BUTTONS
+// ***********************
+// BUTTONS (except colors, colors grouped below)
+// -----
 
 button:hover,
 .btn:hover,
@@ -48,7 +54,6 @@ button,
 	text-decoration: none;
 	margin: 2px 3px;
 	font-size: 0.95rem;
-	// border: solid 1px rgba(0, 0, 0, 0.116);
 	border: none;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
@@ -58,6 +63,10 @@ button,
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.icon_btn svg {
+	margin-left: 10px;
 }
 
 // TEXTS
@@ -85,7 +94,7 @@ p {
 }
 
 /* ****************************************** */
-/*                 UTILITY                    */
+/*              GLOBAL UTILITY                */
 /* ****************************************** */
 
 .flex {
@@ -102,55 +111,53 @@ p {
 	flex-direction: column;
 }
 
-.full-width {
+.full_width {
 	width: 100%;
 }
 
-.half-width {
+.half_width {
 	width: 50%;
 }
 
-.border {
-	border: solid 1px;
+/* ****************************************** */
+/*           GLOBAL COLORS + BORDERS          */
+/* ****************************************** */
+
+// ** NOTE: for colors pertaining to specific components such as cards, find dedicated stylesheet named "component[name].scss" in asset pipeline **
+
+// *************
+// MAIN COLORS
+// ------
+// #f1f1f1
+
+body {
+	// background-color: #f8f8fa;
+	background-color: white;
 }
 
-/* ****************************************** */
-/*                  COLORS                    */
-/* ****************************************** */
-
-// COLOR CLASSES
 .c1 {
-	color: #f0eceb;
-}
-
-// accent color 1
-.c2 {
-	color: #c0c2ce;
-}
-
-// use .c3 for text
-.c3 {
 	color: rgba(0, 0, 0, 0.767);
-}
-.c4 {
-	color: #afafaf;
 }
 
 .bg1 {
-	background-color: #f0eceb;
-}
-
-// accent color 1
-.bg2 {
 	background-color: #f1f1f1;
 }
 
-// Main bg color
-.bg3 {
-	background-color: #f1f1f1;
+.style_link a,
+.new-article_container input[type='submit'],
+button,
+.btn,
+.btn-primary {
+	color: rgba(0, 0, 0, 0.767);
+	background-color: #c5e3ec;
 }
-.bg4 {
-	background-color: #afafaf;
+
+// *************
+// GLOBAL BORDERS
+// ------
+
+.border {
+	border: solid 1px;
 }
 
 .border {
@@ -160,19 +167,6 @@ p {
 .navbar_container {
 	border-bottom: solid 1px #f8f8fa;
 	border-top: solid 1px #d4d4d4;
-}
-
-.style_link a,
-.new-article_container input[type='submit'],
-button,
-.btn,
-.btn-primary {
-	color: rgba(0, 0, 0, 0.5);
-	background-color: #c5e3ec;
-}
-
-body {
-	background-color: #f8f8fa;
 }
 
 //  * ----------------------------------------

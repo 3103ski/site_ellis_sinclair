@@ -43,3 +43,22 @@
 	font-size: 1.05rem;
 	font-weight: 200;
 }
+
+.navbar_social {
+	position: absolute;
+	right: 15px;
+}
+
+.navbar_social svg {
+	margin: 5px;
+}
+
+/* ****************************************** */
+/*        	    RECENT BLOGS                  */
+/* ****************************************** */
+
+@media only screen and (min-width: 992px) {
+	.blogs_recent_container {
+		padding: 20px 7.5%;
+	}
+}

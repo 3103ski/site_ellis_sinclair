@@ -1,14 +1,14 @@
 
-<div class="header_container flex-center  bg2">
-      <h1 class="c3">
+<div class="header_container flex-center  bg1">
+      <h1 class="c1">
         <%= banner %> 
           <% if local_assigns.has_key? :showName %>
             <%= @article.title %>
           <% end %>
       </h1>
 </div>
-<nav class="navbar sticky-top navbar bg2">
-  <div class="navbar_container bg2">
+<nav class="navbar sticky-top navbar bg1">
+  <div class="navbar_container bg1">
     <ul class="flex">
       <li><%= link_to  "home", root_path %></li>
       <li><%= link_to  "books", about_path %></li>
@@ -16,6 +16,12 @@
       <li><%= link_to  "blog", articles_path %></li>
       <li><%= link_to  "about", about_path %></li>
     </ul>
+    <div class="navbar_social flex-center">
+      <i class="fab fa-facebook-square fa-lg"></i>
+      <i class="fab fa-instagram fa-lg"></i>
+      <i class="fab fa-amazon fa-lg"></i>
+      <i class="fab fa-patreon fa-lg"></i>
+    </div>
   </div> 
 </nav>
 
