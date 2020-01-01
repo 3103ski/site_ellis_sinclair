@@ -31,13 +31,17 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def show 
-  end
+  # def show 
+  # end
 
   def destroy
     @article.destroy
     flash[:notice] = "Blog was deleted"
     redirect_to articles_path
+  end
+
+  def recent
+    @articles = Article.all
   end
 
   private

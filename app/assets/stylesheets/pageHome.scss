@@ -24,7 +24,7 @@
 
 .home_book_book img {
 	position: relative;
-	width: 75%;
+	width: 60%;
 	margin: 0 auto;
 	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.45);
 }
@@ -36,10 +36,8 @@
 	padding: 10px;
 }
 
-.home_book_desc h2 {
-	margin: 0 0 10px 0;
-	margin-right: auto;
-	border-bottom: solid 2px rgba(0, 0, 0, 0.17);
-}
-
 // recent blogs
+
+.home_blog_container .container_title {
+	padding-left: 15%;
+}

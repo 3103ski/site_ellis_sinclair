@@ -8,25 +8,34 @@
     </div>
 
     <div class="home_book_desc flex-center flex-vert c1">
-      <h2>Arcadia</h2>
+      <div class="flex-center flex-vert container_title">
+        <h2>Arcadia</h2>
+        <div class="under_line_1 bg3"></div>
+      </div>
       <p>Arcadia was a small town, nestled in the countryside, hidden from the bustling life of the metropolis Athens to the north. It was once an idyllic village of hills and apple orchards, a place to settle down, a place where children and families could grow.</p>
       <p>One abandoned home, a monument of history and decay, cast its long shadow across the village and hidden forces from darker places plague the residents in their attempt to reclaim the town. Our story begins with a young boy named Vincent, visiting Arcadia after the death of his grandmother. He finds himself as the most recent quarry in a struggle to regain the town spanning the generations of those who came before him.</p>
-      <a class="btn btn-primary btn-lg icon_btn">ORDER NOW   <i class="fab fa-amazon fa-sm"></i></div></a>
+      <a class="btn btn-primary btn-lg icon_btn btn_hov" href="#" role="button">ORDER NOW   <i class="fab fa-amazon fa-sm"></i></div></a>
     </div>
 
   </div>
 </div>
 
 <div class="section home_blog_container bg1 flex-center flex-vert">
-  <h1 class="c1">Recent Blogs</h1>
+  <div class="flex-center flex-vert container_title">
+    <h2>Latest Blogs</h2>
+    <div class="under_line_1 bg2"></div>
+  </div>
   <div class="blogs full_width">
     <%= render 'partials/recentBlogs.html.erb' %>
   </div>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Subscribe Now!</a>
+  <p class="">Say a few things about your blog here</p>
+  <div class="flex">
+  <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">MORE BLOGS</a>
+  <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">SUBSCRIBE</a>
+  </div>
 </div>
 
-<div class="section flex flex-vert">
+<div class="section flex-center flex-vert full_width">
     <h1 class="c1">About Ellis</h1>
     <div class=" home_blog_container">
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore tempora amet,</h3>
@@ -36,4 +45,6 @@
     </div>
   </div>
 </div>
+
+<%= render  "articles/recent" %>
 

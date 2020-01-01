@@ -25,7 +25,8 @@
 }
 
 .card_top_btns,
-.card_top_btns button {
+.card_top_btns button,
+.card_top_btns a {
 	height: 45px;
 }
 
@@ -57,7 +58,8 @@
 }
 
 // makes btn transparent to use div bg (left this way for 2 btn version)
-.card_top_btns button {
+.card_top_btns button,
+.card_top_btns a {
 	background-color: rgba(0, 0, 0, 0);
 }
 
@@ -75,7 +77,8 @@
 }
 
 // button text
-.card_top_btns button {
+.card_top_btns button,
+.card_top_btns a {
 	color: #355c7d;
 }
 // card bottom text
@@ -146,10 +149,12 @@
 	border-top-right-radius: 5px;
 }
 
-.card_top_btns button {
+.card_top_btns button,
+.card_top_btns a {
 	margin: 0;
 	border: none;
 	box-shadow: none;
+	text-decoration: none;
 }
 
 /* ******************** */
@@ -195,7 +200,8 @@
 .card_top_pic,
 .card_top_btns,
 .card_container,
-.card_top_btns button {
+.card_top_btns button,
+.card_top_btns a {
 	transition: 0.2s;
 	transition-timing-function: ease;
 }

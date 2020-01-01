@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   get 'articles', to: 'articles#index'
+  get 'articles', to: 'articles#recent'
+  get 'articles', to: 'pages#home'
 
   resources :articles
 end
