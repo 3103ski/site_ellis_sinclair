@@ -57,7 +57,7 @@ button,
 	border: none;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
-	width: 12vw;
+	min-width: 12vw;
 	min-height: 30px;
 	letter-spacing: 1px;
 	display: flex;
@@ -95,10 +95,18 @@ p {
 }
 
 .container_title {
-	margin: 0 auto 0px 0;
+	margin: 0 auto 0 0;
 }
-.container_title h2 {
+.container_title_2 {
+	margin: 0 0 0 auto;
+}
+.container_title h2,
+.container_title_2 h2 {
 	margin: 0;
+}
+
+.t_right {
+	text-align: right;
 }
 
 .under_line_1 {
@@ -131,6 +139,10 @@ p {
 
 .half_width {
 	width: 50%;
+}
+
+.m_to_right {
+	margin-left: auto;
 }
 
 /* ****************************************** */

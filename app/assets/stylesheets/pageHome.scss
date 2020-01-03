@@ -1,9 +1,13 @@
+.row {
+	width: 100%;
+}
 // section 1___Current Headline Book
 
 .section {
 	width: 100%;
 	box-sizing: border-box;
-	padding: 40px 0px;
+	padding: 40px 7.5%;
+	min-height: 75vh;
 }
 .section_one_container {
 	width: 100%;
@@ -11,26 +15,20 @@
 	padding: 40px 0px;
 }
 
-.home_book_container {
-	width: 65%;
-	margin: 20px auto;
-	position: relative;
-}
-
 .home_book_book {
 	position: relative;
-	width: 40%;
+	padding: 30px;
 }
 
 .home_book_book img {
 	position: relative;
-	width: 60%;
+	// width: 60%;
+	max-width: 300px;
 	margin: 0 auto;
 	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.45);
 }
 
 .home_book_desc {
-	width: 50%;
 	position: relative;
 	box-sizing: border-box;
 	padding: 10px;
@@ -40,4 +38,43 @@
 
 .home_blog_container .container_title {
 	padding-left: 15%;
+}
+
+// about + social
+
+.home_about_container p {
+	margin: 15px 0 20px 0;
+	padding-left: 5%;
+}
+
+.home_about_container img {
+	width: 225px;
+	border-radius: 4px;
+	margin-right: auto;
+}
+
+.about_icons svg {
+	margin: 10px;
+}
+
+.about_icons {
+	margin-right: 10px;
+}
+
+.about_icons svg {
+	width: 30px;
+	height: 30px;
+	margin: 6px;
+	transition: 0.15s;
+}
+
+.about_icons svg:hover {
+	width: 35px;
+	height: 35px;
+	margin: 1px;
+	cursor: pointer;
+}
+
+.about_icons .ic {
+	width: 50px;
 }

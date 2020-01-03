@@ -1,13 +1,13 @@
 <%= render 'partials/header.html.erb', {:banner => 'ellis sinclair'} %>
 
-<div class=" section">
-  <div class="home_book_container flex-center">
+<div class="section flex-center">
+  <div class="row flex-center">
 
-    <div class="home_book_book flex-center">
+    <div class="col-md-6 col-3 home_book_book flex-center">
       <%= image_tag "book-cover-arcadia.jpeg" %>   
     </div>
 
-    <div class="home_book_desc flex-center flex-vert c1">
+    <div class="col-md-6 col-9 home_book_desc flex-center flex-vert c1">
       <div class="flex-center flex-vert container_title">
         <h2>Arcadia</h2>
         <div class="under_line_1 bg3"></div>
@@ -30,21 +30,39 @@
   </div>
   <p class="">Say a few things about your blog here</p>
   <div class="flex">
-  <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">MORE BLOGS</a>
-  <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">SUBSCRIBE</a>
+    <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">MORE BLOGS</a>
+    <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">SUBSCRIBE</a>
   </div>
 </div>
 
-<div class="section flex-center flex-vert full_width">
-    <h1 class="c1">About Ellis</h1>
-    <div class=" home_blog_container">
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore tempora amet,</h3>
-      <div class="flex-center home_blog_recent">
-        <div class=""></div>
+<div class="section home_about_container flex-center flex-vert">
+  <div class="row flex">
+    
+    <div class="col-md-7 col-12 flex-center flex-vert">
+      <div class="flex-center flex-vert container_title_2 m_to_right">
+        <h2 class="m_to_right">Ellis Sinclair</h2>
+        <div class="under_line_1 bg3 m_to_right"></div>
       </div>
+      <p class="t_right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores perspiciatis quasi praesentium earum fugiat quae laudantium obcaecati! Eius perspiciatis a laborum accusamus molestias rem optio voluptas distinctio maiores tempora.</p>
+      <div class="flex m_to_right">
+        <div class="about_icons flex-center">
+        <div class="ic flex-center">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </div>
+        <div class="ic flex-center">
+          <i class="fab fa-instagram fa-2x"></i>
+        </div>
+        <div class="ic flex-center">
+          <i class="fab fa-amazon fa-2x"></i>
+        </div>
+      </div>
+        <a class="m_to_right btn btn-primary btn-lg btn_hov" href="#" role="button">MORE ABOUT ELLIS</a>
+    </div>
+    </div>
+    <div class="col-md-5 col-12 flex-center">
+        <%= image_tag 'temp-bio-pic.jpg' %>
     </div>
   </div>
 </div>
 
-<%= render  "articles/recent" %>
 

@@ -46,11 +46,25 @@
 
 .navbar_social {
 	position: absolute;
-	right: 15px;
+	right: 20px;
 }
 
 .navbar_social svg {
 	margin: 5px;
+	width: 23px;
+	height: 23px;
+	transition: 0.15s;
+}
+
+.navbar_social svg:hover {
+	width: 24px;
+	height: 24px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+.navbar_social .ic {
+	width: 30px;
 }
 
 /* ****************************************** */
@@ -59,6 +73,7 @@
 
 @media only screen and (min-width: 992px) {
 	.blogs_recent_container {
-		padding: 5px 7.5% 20px 7.5%;
+		padding: 5px 0 20px 0;
+		// padding: 5px 7.5% 20px 7.5%;
 	}
 }
