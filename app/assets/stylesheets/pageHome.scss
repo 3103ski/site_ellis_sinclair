@@ -1,14 +1,3 @@
-.row {
-	width: 100%;
-}
-// section 1___Current Headline Book
-
-.section {
-	width: 100%;
-	box-sizing: border-box;
-	padding: 40px 7.5%;
-	min-height: 75vh;
-}
 .section_one_container {
 	width: 100%;
 	box-sizing: border-box;
@@ -77,4 +66,36 @@
 
 .about_icons .ic {
 	width: 50px;
+}
+
+// PATREON
+
+.patreon {
+	h1,
+	p {
+		color: #f1f1f1;
+	}
+
+	.style_link a,
+	.new-article_container input[type='submit'],
+	button,
+	.btn,
+	.btn-primary {
+		background-color: #f1f1f1;
+		color: rgba(0, 0, 0, 0.767);
+	}
+
+	.btn_hov {
+		border: solid 1px rgba(0, 0, 0, 0.767);
+	}
+	.btn_hov:hover {
+		border: solid 1px rgba(73, 12, 12, 0.767);
+		background-color: #f1f1f1;
+		color: rgba(0, 0, 0, 0.767);
+	}
+
+	svg {
+		color: #f1f1f1;
+		margin: 30px 10px;
+	}
 }

@@ -116,8 +116,20 @@ p {
 }
 
 /* ****************************************** */
-/*              GLOBAL UTILITY                */
+/*         GLOBAL UTILITY + LAYOUT            */
 /* ****************************************** */
+
+.row {
+	width: 100%;
+}
+// section 1___Current Headline Book
+
+.section {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 7.5%;
+	min-height: 75vh;
+}
 
 .flex {
 	display: flex;
@@ -179,6 +191,16 @@ body {
 
 .bg3 {
 	background-color: #d4d4d4;
+}
+
+.bg4 {
+	background: rgb(59, 59, 59);
+	background: linear-gradient(
+		90deg,
+		rgba(59, 59, 59, 1) 8%,
+		rgba(109, 109, 109, 1) 35%,
+		rgba(241, 241, 241, 1) 73%
+	);
 }
 
 .style_link a,

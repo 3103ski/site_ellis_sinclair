@@ -2,11 +2,9 @@
 
 <div class="section flex-center">
   <div class="row flex-center">
-
     <div class="col-md-6 col-3 home_book_book flex-center">
       <%= image_tag "book-cover-arcadia.jpeg" %>   
     </div>
-
     <div class="col-md-6 col-9 home_book_desc flex-center flex-vert c1">
       <div class="flex-center flex-vert container_title">
         <h2>Arcadia</h2>
@@ -14,9 +12,18 @@
       </div>
       <p>Arcadia was a small town, nestled in the countryside, hidden from the bustling life of the metropolis Athens to the north. It was once an idyllic village of hills and apple orchards, a place to settle down, a place where children and families could grow.</p>
       <p>One abandoned home, a monument of history and decay, cast its long shadow across the village and hidden forces from darker places plague the residents in their attempt to reclaim the town. Our story begins with a young boy named Vincent, visiting Arcadia after the death of his grandmother. He finds himself as the most recent quarry in a struggle to regain the town spanning the generations of those who came before him.</p>
-      <a class="btn btn-primary btn-lg icon_btn btn_hov" href="#" role="button">ORDER NOW   <i class="fab fa-amazon fa-sm"></i></div></a>
+      <a class="btn btn-primary btn-lg icon_btn btn_hov" target="_blank" href="https://www.amazon.com/Arcadia-Ellis-Sinclair/dp/1612969178" role="button">ORDER NOW   <i class="fab fa-amazon fa-sm"></i></div></a>
     </div>
+  </div>
+</div>
 
+<div class="section patreon bg2 flex-center flex-vert">
+  <div class="row flex-center flex-vert">
+    <h1>Subscribe To My Patreon</h1>
+    <p>Like my writing? Support me making more by subscribing to my patreon!</p>
+    <div class="under_line_1 bg4"></div>
+    <i class="fab fa-patreon fa-10x"></i>
+    <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">SUBSCRIBE</a>
   </div>
 </div>
 
@@ -30,7 +37,7 @@
   </div>
   <p class="">Say a few things about your blog here</p>
   <div class="flex">
-    <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">MORE BLOGS</a>
+    <a class="btn btn-primary btn-lg btn_hov" href='<%= articles_path %>' role="button">MORE BLOGS</a>
     <a class="btn btn-primary btn-lg btn_hov" href="#" role="button">SUBSCRIBE</a>
   </div>
 </div>
@@ -56,7 +63,8 @@
           <i class="fab fa-amazon fa-2x"></i>
         </div>
       </div>
-        <a class="m_to_right btn btn-primary btn-lg btn_hov" href="#" role="button">MORE ABOUT ELLIS</a>
+        <a class="m_to_right btn btn-primary btn-lg btn_hov" href='<%= about_path %>' role="button">MORE ABOUT ELLIS</a>
+        
     </div>
     </div>
     <div class="col-md-5 col-12 flex-center">
@@ -64,5 +72,4 @@
     </div>
   </div>
 </div>
-
 
