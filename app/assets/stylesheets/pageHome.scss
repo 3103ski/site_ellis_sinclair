@@ -45,6 +45,11 @@
 			margin: 0 0 0 auto;
 			box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.45);
 		}
+		@media screen and (max-width: 768px) {
+			img {
+				margin: 0px auto;
+			}
+		}
 	}
 
 	.home_book_desc {
@@ -100,6 +105,14 @@
 		color: #f1f1f1;
 		margin: 30px 10px;
 	}
+
+	@media only screen and (max-width: 768px) {
+		h1,
+		p {
+			padding: 2px 13%;
+			text-align: center;
+		}
+	}
 }
 
 // *****************
@@ -138,6 +151,17 @@
 		width: 225px;
 		border-radius: 4px;
 		margin-right: auto;
+	}
+	@media only screen and (max-width: 768px) {
+		img {
+			margin: 10px auto;
+		}
+		.m_to_right {
+			margin: 3px auto;
+		}
+		p {
+			text-align: center;
+		}
 	}
 }
 
