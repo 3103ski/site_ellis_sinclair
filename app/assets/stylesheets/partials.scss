@@ -19,7 +19,7 @@
 	display: flex;
 	align-items: center;
 	position: sticky;
-	height: 50px;
+	height: 40px;
 	width: 100%;
 	margin-top: auto;
 	padding: 0;
@@ -73,7 +73,71 @@
 
 @media only screen and (min-width: 992px) {
 	.blogs_recent_container {
-		padding: 5px 0 20px 0;
+		padding: 5px 0 40px 0;
 		// padding: 5px 7.5% 20px 7.5%;
+	}
+}
+
+/* ****************************************** */
+/*        	         FOOTER                   */
+/* ****************************************** */
+
+.footer {
+	width: 100%;
+	min-height: 150px;
+
+	.amazon {
+		padding-left: 11%;
+	}
+
+	.amazon,
+	.f_patreon {
+		border-right: solid 1px #f1f1f1;
+	}
+
+	.contact {
+		padding-right: 11%;
+	}
+
+	.btn_hov {
+		// border: solid 1px rgba(241, 241, 241, 0.3);
+		border: none;
+	}
+
+	.btn_hov:hover {
+		border: none;
+		background-color: #f1f1f1;
+		color: rgba(0, 0, 0, 0.767);
+		letter-spacing: 2px;
+	}
+
+	.f_patreon,
+	.contact,
+	.amazon {
+		min-height: 40px;
+	}
+
+	.amazon a,
+	.contact a,
+	.f_patreon a {
+		// width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		color: #f1f1f1;
+		background-color: unset;
+		letter-spacing: 3px;
+		font-size: 0.8rem;
+	}
+
+	p {
+		margin-bottom: 5px;
+		letter-spacing: 2px;
+		font-size: 0.65rem;
+	}
+
+	.line {
+		height: 1px;
+		width: 80%;
+		margin: 25px 0px 5px 0px;
 	}
 }
