@@ -13,6 +13,14 @@
 	margin-right: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+	.s1bg,
+	.s3bg,
+	.s3about {
+		margin: 0;
+	}
+}
+
 // RADIUS' FOR SECTIONS
 
 .book_section,
@@ -48,6 +56,7 @@
 		@media screen and (max-width: 768px) {
 			img {
 				margin: 0px auto;
+				width: 70%;
 			}
 		}
 	}
@@ -162,12 +171,6 @@
 		p {
 			text-align: center;
 		}
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	p {
-		color: blue;
 	}
 }
 
