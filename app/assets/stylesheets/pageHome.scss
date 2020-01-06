@@ -1,36 +1,38 @@
-.s1bg {
-	padding-right: 30px;
-	margin-left: 30px;
+$accent_bar_width: 30px;
+$accent_radius: 180px;
+
+.s1book,
+.s2patreon,
+.s3about {
+	display: flex;
+	position: relative;
 }
 
-.s3bg {
-	padding-left: 30px;
-	margin-right: 30px;
+.s1book {
+	margin-left: $accent_bar_width;
+	padding-right: $accent_bar_width;
 }
 
 .s3about {
-	padding-left: 30px;
-	margin-right: 30px;
+	margin-right: $accent_bar_width;
+	padding-left: $accent_bar_width;
 }
-
-@media only screen and (max-width: 768px) {
-	.s1bg,
-	.s3bg,
-	.s3about {
-		margin: 0;
-	}
-}
-
-// RADIUS' FOR SECTIONS
 
 .book_section,
 .patreon {
-	border-bottom-right-radius: 210px;
+	border-bottom-right-radius: $accent_radius;
 }
 
 .home_about_container,
 .patreon {
-	border-top-left-radius: 210px;
+	border-top-left-radius: $accent_radius;
+}
+
+@media only screen and (max-width: 768px) {
+	.s1book,
+	.s3about {
+		margin: 0;
+	}
 }
 
 // *****************
@@ -107,7 +109,7 @@
 
 	.under_line_1 {
 		width: 80%;
-		margin: 4px 30% 4px auto;
+		margin: 4px 20% 4px auto;
 	}
 
 	svg {
@@ -120,6 +122,15 @@
 		p {
 			padding: 2px 13%;
 			text-align: center;
+		}
+
+		.svg-inline--fa.fa-w-16 {
+			width: 0.5em;
+			height: 0.5em;
+		}
+
+		.patreon .under_line_1 {
+			margin: 4px 15% 4px auto;
 		}
 	}
 }
@@ -161,15 +172,33 @@
 		border-radius: 4px;
 		margin-right: auto;
 	}
+
+	.mobile_bio_pic {
+		display: none;
+	}
+
+	.desktop_bio_pic {
+		display: unset;
+	}
+
 	@media only screen and (max-width: 768px) {
 		img {
 			margin: 10px auto;
 		}
-		.m_to_right {
-			margin: 3px auto;
-		}
 		p {
-			text-align: center;
+			text-align: right;
+		}
+
+		.m_to_right {
+			margin: 3px 0 3px auto;
+		}
+		.mobile_bio_pic {
+			display: unset;
+			display: flex;
+			margin: 0 auto;
+		}
+		.desktop_bio_pic {
+			display: none;
 		}
 	}
 }
